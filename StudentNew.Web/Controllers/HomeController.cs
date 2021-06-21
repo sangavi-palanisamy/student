@@ -18,7 +18,7 @@ namespace StudentNew.Web.Controllers
             _logger = logger;
         }
 
-        public IActionResult Index1()
+        public IActionResult Index9()
         {
             return View();
         }
