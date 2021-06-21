@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Student.Core.IServices;
+using Student.Core.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,9 +22,9 @@ namespace StudentNew.Web.Controllers
             return View();
         }
         [HttpPost]
-        public IActionResult Loginpage(StudentLogin Login)
+        public IActionResult Loginpage(StudentLogin Login1)
         {
-            var value = _testService.StudentLogin(Login);
+            var value = _testService.StudentLogin(Login1);
             if (value != null)
             {
                 return View("create");
