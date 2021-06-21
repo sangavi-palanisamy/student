@@ -1,0 +1,90 @@
+﻿@model IEnumerable<Student.Core.Models.Studententry>
+
+@{
+    ViewData["Title"] = "Studentshow";
+}
+
+<h1>Studentshow</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Studid)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FirstName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SecondName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Dateofbirth)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Studage)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Favouritesub)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Interestescourse)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Mathsmark)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Chemistrymark)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Computermark)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Studid)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FirstName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SecondName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Dateofbirth)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Studage)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Favouritesub)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Interestescourse)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Mathsmark)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Chemistrymark)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Computermark)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                    @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                    @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

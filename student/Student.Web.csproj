@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Student.Core\Student.Core.csproj" />
+    <ProjectReference Include="..\Student.entity\Student.entity.csproj" />
+    <ProjectReference Include="..\Student.Resources\Student.Resources.csproj" />
+    <ProjectReference Include="..\Student.Services\Student.Services.csproj" />
+    <ProjectReference Include="..\Student.Utilities\Student.Utilities.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Models\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.5" />
+    <PackageReference Include="System.Collections" Version="4.3.0" />
+  </ItemGroup>
+
+</Project>

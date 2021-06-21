@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.2" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Student.Core\Student.Core.csproj" />
+    <ProjectReference Include="..\Student.Resources\Student.Resources.csproj" />
+    <ProjectReference Include="..\Student.Services\Student.Services.csproj" />
+  </ItemGroup>
+
+</Project>
